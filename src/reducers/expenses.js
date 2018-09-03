@@ -1,4 +1,4 @@
-import * as actionType from './actionType';
+import * as actionType from '../const/actionType';
 
 const expensesReducerDefaultState = [];
 

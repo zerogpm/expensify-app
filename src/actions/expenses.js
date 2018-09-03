@@ -1,4 +1,5 @@
 import uuid from "uuid";
+import * as actionType from '../const/actionType';
 
 //Add Expense
 export const addExpense = (
@@ -8,7 +9,7 @@ export const addExpense = (
     amount = 0,
     createdAt = 0
   } = {}) => ({
-  type: 'ADD_EXPENSE',
+  type: actionType.ADD_EXPENSE,
   expense: {
     id: uuid(),
     description,
@@ -23,7 +24,7 @@ export const removeExpense = (
   {
     id
   } = {}) => ({
-  type: 'REMOVE_EXPENSE',
+  type: actionType.REMOVE_EXPENSE,
   id
 });
 
@@ -32,7 +33,7 @@ export const editExpense = (
   id,
   updates
 ) => ({
-  type: 'EDIT_EXPENSE',
+  type: actionType.EDIT_EXPENSE,
   id,
   updates
 });
@@ -41,6 +42,6 @@ export const editExpense = (
 const setTextFilter = (
   text = ''
 ) => ({
-  type: 'SET_TEXT_FILTER',
+  type: actionType.SET_TEXT_FILTER,
   text
 });
