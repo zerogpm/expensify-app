@@ -10,7 +10,7 @@ import './styles/styles.scss';
 
 const store = configureStore();
 
-store.dispatch(addExpense({ description: 'Water bill', amount: 100, createdAt:-21000}));
+store.dispatch(addExpense({ description: 'Water bill', amount: 4500, createdAt:-21000}));
 store.dispatch(addExpense({ description: 'Rent bill', amount: 200, createdAt:-21000}));
 store.dispatch(addExpense({ description: 'Gas bill', amount: 50, createdAt:-1000}));
 
