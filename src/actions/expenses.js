@@ -21,9 +21,7 @@ export const addExpense = (
 
 //Remove Expense
 export const removeExpense = (
-  {
-    id
-  } = {}) => ({
+  { id } = {}) => ({
   type: actionType.REMOVE_EXPENSE,
   id
 });
@@ -39,7 +37,7 @@ export const editExpense = (
 });
 
 //Set text filter
-const setTextFilter = (
+export const setTextFilter = (
   text = ''
 ) => ({
   type: actionType.SET_TEXT_FILTER,
